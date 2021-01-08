@@ -14,5 +14,9 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
+RUN apt-get install -y rsyslog && apt-get install -y rsync && apt-get install -y sshpass && apt-get install -y inotify-tools
+RUN sed -i 's/\$RepeatedMsgReduction on/\$RepeatedMsgReduction off/g' /etc/rsyslog.conf
+
 EXPOSE 22
+
 CMD ["/usr/sbin/sshd", "-D"]
