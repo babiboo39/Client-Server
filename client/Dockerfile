@@ -19,4 +19,4 @@ RUN sed -i 's/\$RepeatedMsgReduction on/\$RepeatedMsgReduction off/g' /etc/rsysl
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD rsyslogd & sh /home/alphaClient.sh & /usr/sbin/sshd -D
