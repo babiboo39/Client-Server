@@ -18,4 +18,4 @@ RUN apt-get install -y rsyslog && apt-get install -y rsync
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD rsyslogd & sh /home/alphaServer.sh & /usr/sbin/sshd -D
