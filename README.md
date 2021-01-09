@@ -18,6 +18,7 @@ A multi container apps that work as simple Client-Server built in Docker
 - AlphaServer runs on port 5000
 - AlphaClient - nodeABC runs on port 5001
 - AlphaClient - nodeXYZ runs on port 5002
+
 *however, you can change the port as you wish by changing the server's and client's port in docker-compose.yml file (make sure not to put a port number that **already used**)*
 
 ### USAGE (from project directory)
@@ -37,6 +38,10 @@ ssh root@localhost -p 5001
 -for nodeXYZ :
 ```
 ssh root@localhost -p 5002
+```
+- To Stop the Instance:
+```
+docker-compose down
 ```
 
 > *disclaimer: :warning: there are still some issue with 'pam_systemd(sshd:session) failed to connect to system bus : no such file or directory' in the container, but it does not affect the machine and the machine still work as well*
