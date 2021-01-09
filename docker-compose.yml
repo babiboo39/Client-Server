@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  client:
+    build: ./client
+    links:
+      - server
+    ports:
+      - "5001:22"
+    volumes:
+      - ./client:/home
+  server:
+    build: ./server
+    volumes:
+      - ./server:/home
+    ports:
+      - "5002:22"
