@@ -46,7 +46,7 @@ docker-compose down
 
 > *disclaimer: :warning: there are still some issue with 'pam_systemd(sshd:session) failed to connect to system bus : no such file or directory' in the container, but it does not affect the machine and the machine still work as well*
 
-### Source
+### Reference
 - https://test-dockerrr.readthedocs.io/en/latest/examples/running_ssh_service/
 - https://hub.docker.com/r/rastasheep/ubuntu-sshd/dockerfile
 - https://stackoverflow.com/questions/56609182/openthread-environment-docker-rsyslogd-imklog-cannot-open-kernel-log-proc-km
