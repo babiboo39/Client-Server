@@ -21,7 +21,7 @@ A multi container apps that work as simple Client-Server built in Docker
 
 *however, you can change the port as you wish by changing the server's and client's port in docker-compose.yml file (make sure not to put a port number that **already used**)*
 
-### USAGE (from project directory)
+### Usage (from project directory)
 - Automate Deployment
 ```
 docker-compose up -d --build
@@ -35,7 +35,7 @@ watch -n 0.3 tail server/monitor.log
 ```
 ssh root@localhost -p 5001
 ```
--for nodeXYZ :
+- for nodeXYZ :
 ```
 ssh root@localhost -p 5002
 ```
