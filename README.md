@@ -7,10 +7,8 @@ A multi container apps that work as simple Client-Server built in Docker
 - AlphaClient (nodeABC and nodeXYZ) synchronize (report) the log file to AlphaServer as soon as a ssh login attempt
 - AlphaServer can read the log sent by the client, and display the metrics mapped to AlphaClient from where it was reported
 
-### Tested On :
+### Developen and Tested On :
 - Ubuntu 18.04 (Docker image)
-
-### Developed On:
 - Docker (version 19.03.13, build 4484c46d9d)
 - Docker Compose (version 1.26.2, build eefe0d31)
 
